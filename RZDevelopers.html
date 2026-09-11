@@ -1,0 +1,1638 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070812">
+
+<title>RZDevelopers — Developer File Hub</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="ambient">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div class="grid-bg"></div>
+
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a class="brand" href="#top">
+            <span class="brand-icon">RZ</span>
+
+            <span>
+                <b>RZDevelopers</b>
+                <small>Developer File Hub</small>
+            </span>
+        </a>
+
+        <nav class="main-nav">
+            <a class="active" href="#files">Files</a>
+            <a href="#support">Support</a>
+            <a href="#rules">Rules</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="icon-btn" id="headerCart">
+                🛒
+                <i id="cartCount">0</i>
+            </button>
+
+            <button class="btn ghost" id="loginBtn">
+                ورود
+            </button>
+
+            <button class="btn primary" id="registerBtn">
+                ساخت حساب
+            </button>
+
+            <button class="user-chip hidden" id="userBtn">
+                <span id="userAvatar">RZ</span>
+                <span id="userName">User</span>
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+
+<main id="top">
+
+<section class="hero container">
+
+    <div class="hero-copy">
+
+        <div class="status-line">
+            <span class="pulse"></span>
+            RZDEVELOPERS / SYSTEM ONLINE
+            <em>v3</em>
+        </div>
+
+        <h1>
+            فایل‌های خوب،
+            <br>
+            <span>تجربه‌ی بهتر.</span>
+        </h1>
+
+        <p>
+            یک هاب مدرن برای انتشار، خرید و دریافت فایل‌های دولوپری.
+            همه‌چیز از Files تا Ticket Center و سفارش‌ها،
+            در یک تجربه‌ی سریع و تمیز.
+        </p>
+
+        <div class="hero-cta">
+
+            <a class="btn primary xl" href="#files">
+                کاوش Files
+                <b>←</b>
+            </a>
+
+            <button class="btn glass xl" id="heroSell">
+                انتشار فایل
+            </button>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <b id="statFiles">0</b>
+                <span>Published Files</span>
+            </div>
+
+            <div>
+                <b id="statUsers">0</b>
+                <span>Developers</span>
+            </div>
+
+            <div>
+                <b>24/7</b>
+                <span>Ticket Support</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-console">
+
+        <div class="window-bar">
+
+            <div class="window-dots">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+
+            <span>
+                rzdevelopers://files
+            </span>
+
+            <b>
+                ● LIVE
+            </b>
+
+        </div>
+
+
+        <div class="console-main">
+
+            <div class="console-label">
+                LATEST ACTIVITY
+            </div>
+
+
+            <div class="activity">
+
+                <span class="activity-icon">
+                    ⌁
+                </span>
+
+                <div>
+                    <b>
+                        Files marketplace
+                    </b>
+
+                    <small>
+                        Free & Paid resources
+                    </small>
+                </div>
+
+                <strong>
+                    READY
+                </strong>
+
+            </div>
+
+
+            <div class="activity">
+
+                <span class="activity-icon">
+                    $
+                </span>
+
+                <div>
+                    <b>
+                        Secure requests
+                    </b>
+
+                    <small>
+                        Seller approval workflow
+                    </small>
+                </div>
+
+                <strong>
+                    ACTIVE
+                </strong>
+
+            </div>
+
+
+            <div class="activity">
+
+                <span class="activity-icon">
+                    #
+                </span>
+
+                <div>
+                    <b>
+                        Ticket Center
+                    </b>
+
+                    <small>
+                        Fast developer support
+                    </small>
+                </div>
+
+                <strong>
+                    ONLINE
+                </strong>
+
+            </div>
+
+
+            <div class="code-card">
+
+                <span>01</span>
+
+                <code>
+                    publish(<b>"your-file.zip"</b>)
+                </code>
+
+                <span>
+                    →
+                </span>
+
+                <code>
+                    RZ<span>/</span>FILES
+                </code>
+
+            </div>
+
+        </div>
+
+
+        <div class="console-footer">
+
+            <span>
+                LATENCY
+                <b>12ms</b>
+            </span>
+
+            <span>
+                STORAGE
+                <b>INDEXEDDB</b>
+            </span>
+
+            <span>
+                AUTH
+                <b>RZ ACCOUNT</b>
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section id="files" class="section container">
+
+    <div class="section-top">
+
+        <div>
+
+            <div class="kicker">
+                01 / FILES
+            </div>
+
+            <h2>
+                فروشگاه فایل
+                <span>RZ</span>
+            </h2>
+
+            <p>
+                پروژه‌ها، پلاگین‌ها و ابزارهایی که جامعه‌ی دولوپرها منتشر می‌کند.
+            </p>
+
+        </div>
+
+        <button class="btn outline" id="publishTop">
+            + انتشار فایل
+        </button>
+
+    </div>
+
+
+    <div class="toolbar">
+
+        <div class="search">
+
+            <span>
+                ⌕
+            </span>
+
+            <input
+                id="searchInput"
+                placeholder="جستجوی فایل، پلاگین، ابزار..."
+                autocomplete="off"
+            >
+
+        </div>
+
+
+        <div class="filters">
+
+            <button
+                class="filter active"
+                data-filter="all"
+            >
+                همه
+            </button>
+
+            <button
+                class="filter"
+                data-filter="free"
+            >
+                رایگان
+            </button>
+
+            <button
+                class="filter"
+                data-filter="paid"
+            >
+                پولی
+            </button>
+
+            <button
+                class="filter"
+                data-filter="mine"
+            >
+                فایل‌های من
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="publicItems" class="file-grid"></div>
+
+</section>
+
+
+
+<section id="support" class="section container">
+
+    <div class="support-shell">
+
+        <div>
+
+            <div class="kicker">
+                02 / SUPPORT
+            </div>
+
+            <h2>
+                مشکل داری؟
+                <br>
+                <span>تیکت بزن.</span>
+            </h2>
+
+            <p>
+                برای مشکل فنی، گزارش خطا یا درخواست پشتیبانی
+                یک Ticket باز کن و وضعیتش را از پنل دنبال کن.
+            </p>
+
+            <button class="btn primary" id="newTicket">
+                + ایجاد Ticket
+            </button>
+
+        </div>
+
+
+        <div class="support-orbit">
+
+            <div class="orbit-ring"></div>
+
+            <div class="support-core">
+                RZ
+                <br>
+                <small>SUPPORT</small>
+            </div>
+
+            <div class="orbit-card c1">
+                ⚡ پاسخ سریع
+            </div>
+
+            <div class="orbit-card c2">
+                ✓ پیگیری وضعیت
+            </div>
+
+            <div class="orbit-card c3">
+                # 24 / 7
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section id="rules" class="section container">
+
+    <div class="section-top">
+
+        <div>
+
+            <div class="kicker">
+                03 / RULES
+            </div>
+
+            <h2>
+                قبل از خرید،
+                <span>بخوان.</span>
+            </h2>
+
+            <p>
+                برای یک بازار فایل سالم، این چند قانون را رعایت کن.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="rule-grid">
+
+        <article>
+
+            <b>01</b>
+
+            <h3>
+                پرداخت و تأیید
+            </h3>
+
+            <p>
+                در فایل‌های پولی، بعد از پرداخت باید فروشنده
+                سفارش را بررسی و تأیید کند.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <b>02</b>
+
+            <h3>
+                مسئولیت فایل
+            </h3>
+
+            <p>
+                منتشرکننده مسئول محتوای فایل، توضیحات و
+                لینک پرداخت خود است.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <b>03</b>
+
+            <h3>
+                پس از دریافت
+            </h3>
+
+            <p>
+                بعد از دریافت فایل، بازگشت وجه طبق شرایط
+                فروشنده و قوانین سایت انجام می‌شود.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <b>04</b>
+
+            <h3>
+                پشتیبانی
+            </h3>
+
+            <p>
+                برای اختلاف یا مشکل، از Ticket Center
+                استفاده کن و اطلاعات سفارش را نگه دار.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div>
+            <b>RZDevelopers</b>
+            <span>
+                Built for creators & developers.
+            </span>
+        </div>
+
+        <span>
+            © 2026 RZDevelopers
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+<!-- AUTH -->
+
+<div class="modal" id="authModal">
+
+    <div class="modal-card auth-card">
+
+        <button
+            class="close"
+            data-close="authModal"
+        >
+            ×
+        </button>
+
+        <div class="modal-kicker">
+            RZ ACCOUNT
+        </div>
+
+        <h2 id="authTitle">
+            ورود به حساب
+        </h2>
+
+        <p>
+            حساب RZ مستقل از اطلاعات Minecraft است.
+        </p>
+
+
+        <div class="tabs">
+
+            <button
+                id="loginTab"
+                class="active"
+            >
+                ورود
+            </button>
+
+            <button
+                id="registerTab"
+            >
+                ثبت‌نام
+            </button>
+
+        </div>
+
+
+        <form id="authForm">
+
+            <div
+                class="field hidden"
+                id="nameWrap"
+            >
+
+                <label>
+                    نام کاربری
+                </label>
+
+                <input
+                    id="authName"
+                    maxlength="24"
+                    placeholder="_LordReza_"
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label id="identifierLabel">
+                    ایمیل یا نام کاربری
+                </label>
+
+                <input
+                    id="authIdentifier"
+                    required
+                    placeholder="ایمیل یا نام کاربری"
+                >
+
+            </div>
+
+
+            <div
+                class="field hidden"
+                id="emailWrap"
+            >
+
+                <label>
+                    ایمیل
+                </label>
+
+                <input
+                    id="authEmail"
+                    type="email"
+                    placeholder="you@example.com"
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label>
+                    رمز عبور
+                </label>
+
+                <input
+                    id="authPassword"
+                    type="password"
+                    required
+                    placeholder="••••••••"
+                >
+
+            </div>
+
+
+            <button
+                class="btn primary full"
+                id="authSubmit"
+            >
+                ورود
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- DASHBOARD -->
+
+<div class="overlay-page" id="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="side-brand">
+
+            <span class="brand-icon">
+                RZ
+            </span>
+
+            <b>
+                RZ Control
+            </b>
+
+        </div>
+
+
+        <div class="side-user">
+
+            <div
+                class="avatar"
+                id="dashAvatar"
+            >
+                RZ
+            </div>
+
+            <div>
+
+                <b id="sideUsername">
+                    User
+                </b>
+
+                <small id="sideRole">
+                    Member
+                </small>
+
+            </div>
+
+            <span
+                class="founder-badge hidden"
+                id="founderBadge"
+            >
+                FOUNDER
+            </span>
+
+        </div>
+
+
+        <nav class="side-nav">
+
+            <button
+                data-panel="overview"
+                class="active"
+            >
+                ⌂
+                <span>
+                    Overview
+                </span>
+            </button>
+
+            <button data-panel="items">
+                ▣
+                <span>
+                    Files من
+                </span>
+            </button>
+
+            <button data-panel="cart">
+
+                🛒
+
+                <span>
+                    سبد خرید
+                </span>
+
+                <i id="dashboardCartCount">
+                    0
+                </i>
+
+            </button>
+
+            <button data-panel="myorders">
+
+                ◷
+
+                <span>
+                    سفارش‌های من
+                </span>
+
+            </button>
+
+            <button
+                data-panel="sellrequests"
+                id="sellRequestNav"
+                class="hidden"
+            >
+
+                ↔
+
+                <span>
+                    Sell Requests
+                </span>
+
+            </button>
+
+            <button data-panel="tickets">
+
+                #
+
+                <span>
+                    Ticket Center
+                </span>
+
+            </button>
+
+            <button
+                data-panel="purchases"
+                id="purchaseLogsNav"
+                class="hidden"
+            >
+
+                ⌁
+
+                <span>
+                    Purchase Logs
+                </span>
+
+            </button>
+
+            <button
+                data-panel="admin"
+                id="adminNav"
+                class="hidden"
+            >
+
+                ⚙
+
+                <span>
+                    Administration
+                </span>
+
+            </button>
+
+            <button data-panel="account">
+
+                ◎
+
+                <span>
+                    حساب کاربری
+                </span>
+
+            </button>
+
+        </nav>
+
+
+        <button
+            class="home-side"
+            id="homeSide"
+        >
+            ← صفحه اصلی
+        </button>
+
+        <button
+            class="logout-side"
+            id="logoutBtn"
+        >
+            خروج از حساب
+        </button>
+
+    </aside>
+
+
+
+    <div class="dashboard-main">
+
+        <div class="dash-head">
+
+            <div>
+
+                <div class="modal-kicker">
+                    CONTROL CENTER
+                </div>
+
+                <h1 id="dashboardTitle">
+                    Overview
+                </h1>
+
+            </div>
+
+            <button
+                class="close dash-close"
+                id="closeDashboard"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="panels">
+
+
+            <!-- OVERVIEW -->
+
+            <section
+                class="panel active"
+                id="panel-overview"
+            >
+
+                <div class="overview-grid">
+
+                    <div class="welcome-card">
+
+                        <div>
+
+                            <span class="tag">
+                                RZ ACCOUNT
+                            </span>
+
+                            <h2>
+                                خوش اومدی،
+                                <span id="welcomeName">
+                                    Developer
+                                </span>
+                                👋
+                            </h2>
+
+                            <p>
+                                از اینجا می‌تونی فایل‌هات،
+                                سفارش‌ها، تیکت‌ها و Sell Requestها
+                                رو مدیریت کنی.
+                            </p>
+
+                        </div>
+
+                        <div class="big-rz">
+                            RZ
+                        </div>
+
+                    </div>
+
+
+                    <div class="mini-card">
+
+                        <span>
+                            MY FILES
+                        </span>
+
+                        <b id="myItemCount">
+                            0
+                        </b>
+
+                    </div>
+
+
+                    <div class="mini-card">
+
+                        <span>
+                            OPEN TICKETS
+                        </span>
+
+                        <b id="openCount">
+                            0
+                        </b>
+
+                    </div>
+
+
+                    <div class="mini-card">
+
+                        <span>
+                            ORDERS
+                        </span>
+
+                        <b id="totalOrders">
+                            0
+                        </b>
+
+                    </div>
+
+                </div>
+
+
+                <div class="quick-grid">
+
+                    <button data-panel="items">
+                        ▣ مدیریت فایل‌ها
+                        <span>→</span>
+                    </button>
+
+                    <button data-panel="sellrequests">
+                        ↔ Sell Request
+                        <span>→</span>
+                    </button>
+
+                    <button data-panel="tickets">
+                        # Ticket Center
+                        <span>→</span>
+                    </button>
+
+                    <button data-panel="account">
+                        ◎ Account
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- MY FILES -->
+
+            <section
+                class="panel"
+                id="panel-items"
+            >
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <h2>
+                            فایل‌های من
+                        </h2>
+
+                        <p>
+                            فایل‌های منتشرشده و قابل مدیریت.
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="btn primary"
+                        id="publishDash"
+                    >
+                        + انتشار فایل
+                    </button>
+
+                </div>
+
+                <div
+                    id="myItems"
+                    class="dashboard-list"
+                ></div>
+
+            </section>
+
+
+
+            <!-- CART -->
+
+            <section
+                class="panel"
+                id="panel-cart"
+            >
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <h2>
+                            سبد خرید
+                        </h2>
+
+                        <p>
+                            فایل‌های پولی انتخاب‌شده.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="cart-layout">
+
+                    <div
+                        id="cartItems"
+                        class="dashboard-list"
+                    ></div>
+
+                    <aside
+                        id="cartSummary"
+                        class="summary-card"
+                    ></aside>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ORDERS -->
+
+            <section
+                class="panel"
+                id="panel-myorders"
+            >
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <h2>
+                            سفارش‌های من
+                        </h2>
+
+                        <p>
+                            وضعیت خریدها و دسترسی فایل‌ها.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="myOrders"
+                    class="dashboard-list"
+                ></div>
+
+            </section>
+
+
+
+            <!-- SELL REQUESTS -->
+
+            <section
+                class="panel"
+                id="panel-sellrequests"
+            >
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <h2>
+                            Sell Requests
+                        </h2>
+
+                        <p>
+                            درخواست‌های خرید فایل‌های شما.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="sellRequests"
+                    class="dashboard-list"
+                ></div>
+
+            </section>
+
+
+
+            <!-- TICKETS -->
+
+            <section
+                class="panel"
+                id="panel-tickets"
+            >
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <h2>
+                            Ticket Center
+                        </h2>
+
+                        <p>
+                            تیکت‌های شما و پاسخ‌های پشتیبانی.
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="btn primary"
+                        id="ticketDash"
+                    >
+                        + Ticket
+                    </button>
+
+                </div>
+
+
+                <div class="ticket-layout">
+
+                    <div
+                        id="ticketList"
+                        class="dashboard-list"
+                    ></div>
+
+                    <div
+                        id="ticketThread"
+                        class="thread empty"
+                    >
+                        یک تیکت را انتخاب کنید.
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- PURCHASE LOGS -->
+
+            <section
+                class="panel"
+                id="panel-purchases"
+            >
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <h2>
+                            Purchase Logs
+                        </h2>
+
+                        <p>
+                            گزارش سفارش‌های ثبت‌شده در سیستم.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="purchaseLogs"
+                    class="dashboard-list"
+                ></div>
+
+            </section>
+
+
+
+            <!-- ADMIN -->
+
+            <section
+                class="panel"
+                id="panel-admin"
+            >
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <h2>
+                            Administration
+                        </h2>
+
+                        <p>
+                            مدیریت نقش کاربران — فقط Founder.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="adminUsers"
+                    class="dashboard-list"
+                ></div>
+
+            </section>
+
+
+
+            <!-- ACCOUNT -->
+
+            <section
+                class="panel"
+                id="panel-account"
+            >
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <h2>
+                            حساب کاربری
+                        </h2>
+
+                        <p>
+                            اطلاعات حساب RZ شما.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="account-card">
+
+                    <div
+                        class="avatar huge"
+                        id="accountAvatar"
+                    >
+                        RZ
+                    </div>
+
+                    <div class="account-fields">
+
+                        <label>
+                            Username
+                            <input
+                                id="accountUsername"
+                                readonly
+                            >
+                        </label>
+
+                        <label>
+                            Email
+                            <input
+                                id="accountEmail"
+                                readonly
+                            >
+                        </label>
+
+                        <label>
+                            Role
+                            <input
+                                id="accountRole"
+                                readonly
+                            >
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- PUBLISH -->
+
+<div class="modal" id="publishModal">
+
+    <div class="modal-card publish-card">
+
+        <button
+            class="close"
+            data-close="publishModal"
+        >
+            ×
+        </button>
+
+        <div class="modal-kicker">
+            FILES / PUBLISH
+        </div>
+
+        <h2>
+            فایل جدید منتشر کن
+        </h2>
+
+        <p>
+            فایل واقعی در IndexedDB مرورگر ذخیره می‌شود؛
+            متادیتا در LocalStorage.
+        </p>
+
+
+        <form id="itemForm">
+
+            <div class="form-grid">
+
+                <div class="field">
+
+                    <label>
+                        نام فایل
+                    </label>
+
+                    <input
+                        id="itemName"
+                        required
+                        maxlength="70"
+                        placeholder="RZ Essentials"
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        دسته‌بندی
+                    </label>
+
+                    <select id="itemCategory">
+
+                        <option>Plugin</option>
+                        <option>Resource</option>
+                        <option>Source</option>
+                        <option>Tool</option>
+                        <option>Template</option>
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="field">
+
+                <label>
+                    توضیحات
+                </label>
+
+                <textarea
+                    id="itemDesc"
+                    required
+                    maxlength="500"
+                    placeholder="این فایل چه کاری انجام می‌دهد؟"
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="field">
+
+                    <label>
+                        قیمت
+                    </label>
+
+                    <input
+                        id="itemPrice"
+                        required
+                        placeholder="Free یا 150000"
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        لینک پرداخت (برای Paid)
+                    </label>
+
+                    <input
+                        id="itemPay"
+                        placeholder="https://..."
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="dropzone"
+                id="dropzone"
+            >
+
+                <input
+                    type="file"
+                    id="itemFile"
+                    hidden
+                >
+
+                <div>
+                    ⇧
+                </div>
+
+                <b id="fileLabel">
+                    فایل را انتخاب کنید
+                </b>
+
+                <small>
+                    حداکثر 8MB
+                </small>
+
+            </div>
+
+
+            <button
+                class="btn primary full"
+                id="publishSubmit"
+            >
+                انتشار فایل
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- TICKET -->
+
+<div class="modal" id="ticketModal">
+
+    <div class="modal-card">
+
+        <button
+            class="close"
+            data-close="ticketModal"
+        >
+            ×
+        </button>
+
+        <div class="modal-kicker">
+            TICKET CENTER
+        </div>
+
+        <h2>
+            ایجاد تیکت
+        </h2>
+
+
+        <form id="ticketForm">
+
+            <div class="form-grid">
+
+                <div class="field">
+
+                    <label>
+                        موضوع
+                    </label>
+
+                    <select id="ticketSubject">
+
+                        <option>
+                            مشکل فنی
+                        </option>
+
+                        <option>
+                            درخواست پشتیبانی
+                        </option>
+
+                        <option>
+                            گزارش خطا
+                        </option>
+
+                        <option>
+                            سوال عمومی
+                        </option>
+
+                        <option>
+                            سایر
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        اولویت
+                    </label>
+
+                    <select id="ticketPriority">
+
+                        <option>
+                            کم
+                        </option>
+
+                        <option>
+                            متوسط
+                        </option>
+
+                        <option>
+                            زیاد
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="field">
+
+                <label>
+                    پیام
+                </label>
+
+                <textarea
+                    id="ticketMessage"
+                    required
+                    placeholder="مشکل را کامل توضیح بده..."
+                ></textarea>
+
+            </div>
+
+
+            <button class="btn primary full">
+                ثبت Ticket
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<div
+    class="toast"
+    id="toast"
+></div>
+
+
+
+<!-- PAYMENT -->
+
+<div
+    class="payment-layer"
+    id="paymentPage"
+>
+
+    <div class="payment-card">
+
+        <div
+            class="payment-symbol"
+            id="paymentIcon"
+        >
+            ⏳
+        </div>
+
+        <div class="modal-kicker">
+            ORDER CENTER
+        </div>
+
+        <h2 id="paymentTitle">
+            درخواست ثبت شد
+        </h2>
+
+        <p id="paymentText"></p>
+
+        <div id="paymentDownload"></div>
+
+        <button
+            class="btn glass full"
+            id="paymentClose"
+        >
+            بازگشت به Files
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
